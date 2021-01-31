@@ -1,0 +1,51 @@
+# File generated with BB pin configurator
+# title: BeagleBone Universal IO Configurator
+overlay cape-universal
+overlay cape-univ-emmc
+P8_3 low #OUT1
+P8_4 low #OUT2
+P8_5 low #OUT3
+P8_6 low #OUT4
+P8_7 low #Zdir
+P8_8 low #Zpul
+P8_9 low #Adir
+P8_10 low #Apul
+P8_11 low #Ypul
+P8_12 low #Ydir
+P8_13 low #BBAlive
+P8_14 low #Cpul
+P8_15 low #Cdir
+P8_16 in #IN6
+P8_17 low #Bpul
+P8_18 low #Bdir
+P8_19 low #DB on/off
+P8_20 low #Xdir
+P8_21 low #Xpul
+P8_22 in #LIMX
+P8_23 in #LIMY
+P8_24 in #LIMZ
+P8_25 in #LIMA
+P8_26 in #IN5
+P9_11 in #IN1
+P9_12 in #IN2
+P9_13 default
+P9_14 low #Daughter board PWM
+P9_15 default
+P9_16 low #Daughter board M62
+P9_17 in #spi #SPI CS
+P9_18 in #spi #SPI MOSI
+P9_21 in #spi #SPI MISO
+P9_22 in #spi #SPI SCLK
+P9_23 in
+P9_24 uart #UART TxD
+#P9_25 in
+P9_26 uart #UART RxD
+P9_27 in
+#P9_28 in #IN4
+#P9_29 default
+#P9_30 default
+#P9_31 default
+#P9_41 default
+#P9_42 default
+#P9_91 default
+#P9_92 default
