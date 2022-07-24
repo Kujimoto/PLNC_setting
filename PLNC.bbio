@@ -32,16 +32,16 @@ P9_13 default
 P9_14 low #Daughter board PWM
 P9_15 default
 P9_16 low #Daughter board M62
-P9_17 in #spi #SPI CS
-P9_18 in #spi #SPI MOSI
-P9_21 in #spi #SPI MISO
-P9_22 in #spi #SPI SCLK
+#P9_17 in #spi #SPI CS
+#P9_18 in #spi #SPI MOSI
+#P9_21 in #spi #SPI MISO
+#P9_22 in #spi #SPI SCLK
 P9_23 in
 P9_24 uart #UART TxD
-#P9_25 in
+P9_25 in
 P9_26 uart #UART RxD
 P9_27 in
-#P9_28 in #IN4
+P9_28 in #IN4
 #P9_29 default
 #P9_30 default
 #P9_31 default

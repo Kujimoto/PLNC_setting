@@ -40,7 +40,10 @@ loadrt limit1 count=2
 # t = Thermistor table (only epcos_B57560G1104 or 1 supported for now)
 # a = analog input channel
 #loadusr -Wn Therm ./ReadTemp.py -n Therm --num_chan 2 -t 1 1 -a 4 5
-loadusr -Wn Therm hal_temp_bbb -n Therm -c 04:epcos_B57560G1104,05:epcos_B57560G1104 -b CRAMPS
+# loadusr -Wn Therm hal_temp_bbb -n Therm -c 04:epcos_B57560G1104,05:epcos_B57560G1104 -b CRAMPS
+loadusr -Wn Therm plnc_temp_spi -n Therm -t 1,2 -c 1
+# create user module named therm, defined by plnc_temp_spi.py
+# options: -n: name, -t: list of heaters, -c: sampling channel
 
 # ################################################
 # THREADS
@@ -208,3 +211,10 @@ net emcmot.00.enable => bb_gpio.p8.out-13
 # Original CRAMPS hal includes pid and fet pwm setting for heaters below.
 # For now, these parts are deleted from this file to focus on current focus.
 #
+
+# Temperature related settings
+# pid module output should be connected to the spi interface
+
+newsig. e0.temp.meas float
+
+setp 
