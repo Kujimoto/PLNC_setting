@@ -136,13 +136,13 @@ setp hpg.stepgen.01.maxaccel        [AXIS_1]STEPGEN_MAX_ACC
 
 #setp hpg.stepgen.01.step_type       0
 # P8.42 PRU1.out5
-setp hpg.stepgen.01.steppin        811
+setp hpg.stepgen.01.steppin        812
 # P8.39 PRU1.out6
-setp hpg.stepgen.01.dirpin         812
+setp hpg.stepgen.01.dirpin         811
 
 
 # ################
-# Z [1] Axis
+# Z [2] Axis
 # ################
 
 # axis enable chain
@@ -175,9 +175,9 @@ setp hpg.stepgen.02.maxaccel        [AXIS_2]STEPGEN_MAX_ACC
 
 #setp hpg.stepgen.02.step_type       0
 # P8.27 PRU1.out8
-setp hpg.stepgen.02.steppin        810
+setp hpg.stepgen.02.steppin        808
 # P8.29 PRU1.out9
-setp hpg.stepgen.02.dirpin         809
+setp hpg.stepgen.02.dirpin         807
 
 
 # ################
@@ -242,7 +242,7 @@ setp bb_gpio.p9.in-11.invert 1
 
 # Machine power
 # Use halui.machine.is-on instead?
-net emcmot.00.enable => bb_gpio.p8.out-13
+#net emcmot.00.enable => bb_gpio.p8.out-13
 
 # Tie machine power signal to the CRAMPS LED
 # Feel free to tie any other signal you like to the LED
